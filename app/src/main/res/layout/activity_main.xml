@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:weightSum="10"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/btedit"
+            android:layout_marginLeft="15dp"
+            android:text="Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plaintext"
+            android:layout_toRightOf="@+id/btdel"
+            android:layout_marginTop="10dp"></Button>
+        <Button
+            android:id="@+id/btdel"
+            android:text="Delete"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plaintext"
+            android:layout_toRightOf="@+id/btadd"></Button>
+        <Button
+
+            android:id="@+id/btadd"
+            android:layout_marginTop="10dp"
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plaintext"></Button>
+        <EditText
+            android:id="@+id/plaintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_weight="8"
+        android:layout_margin="25dp"
+        android:layout_height="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView
+            android:id="@+id/Course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+</LinearLayout>
